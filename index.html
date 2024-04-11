@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital</title>
+	<!-- fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=Open+sans" rel="stylesheet">
+	<!-- Icon fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<!-- Favicon -->
+	<link rel="logo-definitivo" sizes="180x180" href="images/favicon.ico">
+	<link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon.ico">
+	<link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon.ico">
+	<link rel="manifest" href="images/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans',sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #cbc4e2;
+            overflow: hidden;
+        }
+
+        #logo {
+            float: left;
+        }
+
+        #infoContacto {
+            float: right;
+            margin-top: 22px;
+        }
+
+        #infoContacto i {
+            color: #fff;
+            margin-right: 12px;
+            font-size: 1.20rem;
+        }
+
+        article > section #intro {
+            background-image: linear-gradient(rgba(15, 219, 100, 0.83), rgb(190, 185, 255)), url(images/fondo_superior.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+        }
+
+        #intro {
+            display: flex;
+            padding: 60px 0;
+            flex-wrap: row wrap;
+            height: 105%;
+            min-width: 600px;
+        }
+
+        #descripcion {
+            flex-basis: 60%;
+            padding: 0 1em;
+            flex-grow: 2;
+            color: #fff;
+        }
+
+        #formulario {
+            flex-basis: 30%;
+            background-color: #fff;
+            padding: 20px 1em;
+        }
+
+        h1 {
+            font-size: 2.68rem;
+            font-family: arial,tahoma,verdana,sans-serif;
+            margin-bottom: 25px;
+        }
+
+        #descripcion p {
+            margin-bottom: 33px;
+        }
+
+        #formulario h2 {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 0.90rem;
+        }
+
+        input[type="text"], input[type="email"] {
+            display: inline-block;
+            width: 100%;
+            height: 45px;
+            padding: 0 1em;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            border: none;
+            background-color: #2ee24c;
+            color: #fff;
+            width: 100%;
+            padding: 10px 1em;
+            margin: 25px auto;
+            font-size: 1rem;
+        }
+
+        #descripcion  span {
+            font-size: 0.9rem;
+            border: 1px solid;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #formulario {
+            flex-basis: 30%;
+            background-color: rgba(0, 0, 0,0.8);
+            padding: 20px 1em;
+            color: #fff;
+        }
+
+        section #seccionDos {
+            padding: 60px 0;
+        }
+
+        #seccionDos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        #seccionDos span {
+            color: #1804c4;
+            font-size: 2.5rem;
+			border: 1px solid;
+			border-radius: 50%;
+			padding: 48px 0;
+			width: 140px;
+			height: 140px;
+			margin-bottom: 35px;
+
+
+        }
+
+		.col h3 {
+			font-size: 1.1rem;
+			font-weight: 500;
+			margin-bottom: 12px;
+		}
+
+		#Tres {
+			display: flex;
+
+		}
+
+		#Tres div {
+			flex-basis: 60%;
+			padding-right: 1.9em;
+		}
+
+		#Tres video {
+			flex-shrink: 40%;
+			width: 40%;
+			align-self: flex-start;
+		}
+
+		#Tres h2 {
+			margin-bottom: 20px;
+		}
+
+		#Tres a {
+			display: inline-block;
+			background-color: #1bee7a;
+			color: #fff;
+			padding: 12px 10em;
+			text-decoration: none;
+			margin: 25px 0;
+		}
+
+		#seccionCuatro .card {
+			padding: 60px 0;
+			text-align: center;
+		}
+
+		#seccionCuatro {
+			display: flex;
+			justify-content: space-between;
+			margin: 50px auto;
+		}
+
+		.card img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.card {
+			margin: 20px 0.5em;
+			box-shadow: 2px 5px 15px #ccc9c9;
+			padding-bottom: 35px;
+		}
+
+		.card p {
+			font-size: 0.9rem;
+			padding: 12px 2em;
+		}
+
+		.card svg {
+			font-size: 1.5rem;
+			color: #107ba7;
+			margin: 0 0.2em;
+		}
+
+		#seccionCinco {
+            background-image: linear-gradient(rgba(5 154 251 / 58%), rgba(8, 195, 250, 0.83)), url(images/fondo_inferior.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+        }
+ 
+		#seccionCinco {
+			display: flex;
+			flex-flow: column wrap;
+			height: 100%;
+			min-height: 400px;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+		}
+
+		#seccionCinco h2 {
+			margin-bottom: 25px;
+		}
+
+		#seccionCinco p {
+			margin-bottom: 20px;
+		}
+
+		#seccionCinco a {
+			display: block;
+			background-color: #09c748;
+			color: #fff;
+			text-decoration: none;
+			padding: 12px 2em;
+		}
+
+		footer {
+			background-color: #2c2828;
+			padding: 20px 0;
+		}
+
+		.copyright {
+			float:right ;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		#piedePagina {
+
+			overflow: hidden;
+		}
+
+		.nav li {
+			display: inline-block;
+			font-size: 0.8rem;
+			padding: 12px 0 0;
+		}
+
+		.nav li a {
+			color: #c9c4c4;
+			text-decoration: none;
+			padding-right: 1.5em;
+		}
+
+		h2 {
+			font-size: 1.43rem;
+			margin-bottom: 30px;
+	        text-align: center;
+		}
+
+    </style>
+
+
+</head>
+<html>
+<body>
+
+    	<!-- Cabecera -->
+	<header>
+		<div class="container">
+		<div id="logo">
+			<a href="index.html"><img src="images/logotipo.png" alt="logotipo"></a>
+		</div>
+			<div id="infoContacto">
+			<i><a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></i></a>
+			<i><a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a></i>
+			<i><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></i>1-234-567-890
+		</div>
+		</div> 
+	</header>
+
+	<main>
+		<article>
+			<section>
+				<div id="intro" class="container">
+					<div id="descripcion">
+						<h1>curso profesional de Marketing Digital</h1>
+						<p><span class="material-symbols-outlined">
+                            check
+                            </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><span class="material-symbols-outlined">
+                            check
+                            </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><span class="material-symbols-outlined">
+                            check
+                            </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div id="formulario">
+						<h2>solicitar informacion</h2>
+
+						<form action="datos.php" method="POST">
+							<label for="suNombre">Nombre:</label>
+							<input type="text" name="nombre" id="suNombre">
+							
+							<label for="suApellido">Apellido:</label>
+							<input type="text" name="Apellido" id="suApellido">
+							
+							<label for="suEmail">Email:</label>
+							<input type="text" name="Email" id="suEmail">
+
+							<input type="submit" value="enviar solicitud">
+							
+						</form>
+						<small>* Nunca compartimos tu informacion personal con terceros. Revisa nuestra<a href="#" target="_blank">politica de privacidad</a></small>
+				</div>
+			</section>
+			<section>
+				<div id="seccionDos" class="container">
+					<div class="col">
+                        <span class="material-symbols-outlined">
+                            calendar_today
+                            </span>
+						<h3>escoge tu propio horario</h3>
+					</div>
+					<div class="col">
+                        <span class="material-symbols-outlined">
+                            public
+                            </span>
+                        <h3>Aprende de los expertos de la industria</h3>
+					</div>
+					<div class="col">
+						<span class="material-symbols-outlined">
+                            groups
+                            </span>
+                        <h3>crea campañas reales</h3>
+					</div>
+					<div class="col">
+                        <span class="material-symbols-outlined">
+                            verified_user
+                            </span>
+						<h3>obten tu certificado</h3>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div id="Tres" class="container">
+					<div>
+						<h2>Domina las herramientas para implementar campañas efectivas de Marketing digital</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<a href="#">Descargar temario</a>
+					</div>
+					<video controls>
+
+						<source src="images/marketing.mp4" type="video/mp4">
+						<source src="images/marketing.ogg" type="video/ogg">
+						<source src="images/marketing.webm" type="video/webm">
+						<p>su navegador no sopota este formato de video</p>
+					
+					</video>
+				</div>
+			</section>
+			<section>
+				<h2>conoce a nuestro staff de instructores</h2>
+				
+				<div id="seccionCuatro" class="container">
+
+					<div class="card">
+						<img src="images/profile1.jpeg" alt="imagen de una persona">
+						<h3>Ned s.</h3>
+						<p>consultor de marketing digital</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+					<div class="card">
+						<img src="images/profile2.jpeg" alt="imagen de una persona">
+						<h3>Joan w.</h3>
+						<p>paid search specialist</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+					<div class="card">
+						<img src="images/profile3.jpeg" alt="imagen de una persona">
+						<h3>Carrie m.</h3>
+						<p>directora de E-Commerce</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+					<div class="card">
+						<img src="images/profile4.jpeg" alt="imagen de una persona">
+						<h3>Rick g.</h3>
+						<p>consultor de social media</p>
+						<a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+						<a href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+						<a href="https://mx.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+					</div>
+
+				</div>
+			</section>
+			<section>
+				<div id="seccionCinco" class="container">
+					<h2>¿Deseas más informacion?</h2>
+					<p>Rellena nuestro formulario de solicitud de informacion y nos pondremos en contacto contigo</p>
+					<a href="#">¡Solicitar informacion ahora!</a> 
+				</div>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<div id="piedePagina" class="container">
+			<ul class="nav">
+				<li><a href="#">home</a></li>
+				<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Cursos</a></li>
+				<li><a href="#">politica de privacidad</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+
+			<div class="copyright">
+				<small>&copy Derechos Reservados.</small>
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
